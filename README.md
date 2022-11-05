@@ -14,14 +14,18 @@ Next create an .env file add the token in the file
 export TF_VAR_do_token=<your API token>
   
 next we need to source the token by sourcing the .env file
+  
 source .env
   
 You can verify whether it worked by using the follwoing command
+  
 echo $TF_VAR_do_token
   
 Step3 Initializing Terraform
 Run the following command to initialize Terraform
- -terraform init
+  
+terraform init
+  
 Step4 Clone git repository 
 Next clone the git repository using the the git clone command
 
@@ -30,4 +34,5 @@ Next make neceesary changes in the file main.tf file according to your requireme
 
 Step6 Apply changes
 Next to execute the changes run the following command
+  
 terraform apply
